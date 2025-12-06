@@ -1,0 +1,8 @@
+ {  
+    "camera_index": 1,
+    "camera_width": 640,
+    "camera_height": 480,
+    "arduino_port": "COM3",
+    "arduino_baudrate": 9600,
+    "gesture_delay": 0.3
+}

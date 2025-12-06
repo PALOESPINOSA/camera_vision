@@ -1,0 +1,16 @@
+[project]
+name = "camera-vision"
+version = "0.1.0"
+description = "Sistema de control por gestos con MediaPipe"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "opencv-python==4.8.1.78",
+    "numpy==1.24.3",
+    "mediapipe==0.10.14",
+    "pyserial==3.5",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
