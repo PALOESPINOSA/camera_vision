@@ -71,22 +71,40 @@ class GestureControl:
         print(f"Cámara: {self.config['camera_width']}x{self.config['camera_height']}")
         return True
     
+    # def connect_arduino(self):
+    #     """Conectar con Arduino."""
+    #     try:
+    #         self.arduino = serial.Serial(
+    #             self.config["arduino_port"],
+    #             self.config["arduino_baudrate"],
+    #             timeout=1
+    #         )
+    #         time.sleep(2)  # Esperar inicialización
+    #         print(f"Conectado a Arduino en {self.config['arduino_port']}")
+    #         return True
+    #     except serial.SerialException as e:
+    #         print(f"Error conectando Arduino: {e}")
+    #         self.arduino = None
+    #         return False
+
     def connect_arduino(self):
         """Conectar con Arduino."""
         try:
+            print(f"Intentando conectar a Arduino en {self.config['arduino_port']}...")
             self.arduino = serial.Serial(
                 self.config["arduino_port"],
                 self.config["arduino_baudrate"],
                 timeout=1
             )
             time.sleep(2)  # Esperar inicialización
-            print(f"Conectado a Arduino en {self.config['arduino_port']}")
+            print(f"✓ Conectado a Arduino en {self.config['arduino_port']}")
             return True
         except serial.SerialException as e:
-            print(f"Error conectando Arduino: {e}")
+            print(f"✗ Error conectando Arduino: {e}")
             self.arduino = None
             return False
-    
+
+
     def detect_fingers(self, landmarks):
         """Detectar dedos extendidos (basado en tus capturas)."""
         if landmarks is None:

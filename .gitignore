@@ -40,7 +40,3 @@ wheels/
 # Logs y datos
 *.log
 logs/
-
-# Configuración del sistema
-settings.json  # Excluir configuraciones locales (usar settings.example.json)
-'@ | Out-File -FilePath .gitignore -Encoding UTF8
