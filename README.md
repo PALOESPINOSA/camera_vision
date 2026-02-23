@@ -382,7 +382,7 @@ Comunicación unidireccional Python → Arduino:
 
 **GitHub Issues:** [Reportar problemas](https://github.com/PALOESPINOSA/camera_vision/issues)
 
-**Autor:** PALOESPINOSA  
+**Autor:** JORGE A. ESPINOSA  
 **Repositorio:** https://github.com/PALOESPINOSA/camera_vision
 
 ## 📄 Licencia y Atribuciones
